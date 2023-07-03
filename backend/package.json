@@ -4,7 +4,10 @@
   "description": "Authentication Flow with Frontend and backend server-side validations,  Store and display Tree structure data using database relationships, Upload video and convert into m3u8 Format and showing upload progress",
   "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./source/server.ts",
+    "build": "rm -rf build/ && tsc",
+    "start": "tsc && node ./build/server.js"
   },
   "repository": {
     "type": "git",
